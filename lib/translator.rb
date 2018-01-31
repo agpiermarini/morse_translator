@@ -80,19 +80,19 @@ class Translator
       @output.join("")
   end
 
-  def morse_to_eng(string)
-      @input = []
-      @output = []
-
-      @input = string.split(" ")
-
-      @input.each do | element |
-          @dictionary.select do |key, value|
-             @output << key[value] if element == value
-          end
-      end
-
-      @output.join("")
-
-  end
+  # def morse_to_eng(string)
+  #     @input = []
+  #     @output = []
+  #
+  #     @input = string.split(" ")
+  #
+  #     @input.each do | element |
+  #         @dictionary.select do |key, value|
+  #            @output << key[value] if element == value
+  #         end
+  #     end
+  #
+  #     @output.join("")
+  #
+  # end
 end
